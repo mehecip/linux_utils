@@ -1,0 +1,1 @@
+ls /usr/src/linux-headers-* -d | sed -e 's/.*linux-headers-//' | sort -V | tac | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
