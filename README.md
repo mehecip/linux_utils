@@ -10,7 +10,7 @@ Signes an already installed linux kernel image. Makes a copy of the image and up
 Requires own MOK keys.
 
 ```sh
-  sign_linux_kernel.sh 6.7.5
+  ./sign_linux_kernel.sh 6.7.5
 ```
 
 ## sign_and_install_nvidia_driver.sh
@@ -19,7 +19,7 @@ Signes and installs an NVIDIA driver run file.
 Requires own MOK keys.
 
 ```sh
-  sign_and_install_nvidia_driver.sh /home/you/Downloads/NVIDIA-Linux-x86_64-550.40.07.run
+  ./sign_and_install_nvidia_driver.sh /home/you/Downloads/NVIDIA-Linux-x86_64-550.40.07.run
 ```
 
 ## dkms_update_nvidia_drivers.sh
@@ -27,5 +27,5 @@ Needed to build/install newly driver modules on all Linux kernels.
 I need to use it always after installing an NVIDIA driver since I run multiple kernel versions.
 
 ```sh
-  dkms_update_nvidia_drivers.sh
+  ./dkms_update_nvidia_drivers.sh
 ```
